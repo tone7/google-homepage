@@ -3,7 +3,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 140px;
+    margin-top: 200px;
+}
+
+.input-container{
+    position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 #search:hover{
@@ -22,11 +28,97 @@
     border-radius: 25px;
 }
 #google_search_btn{
-    height: 30px;
+    height: 35px;
+    width: 120px;
     margin: 10px 10px 10px 0px;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+#google_search_btn:hover{
+    box-shadow: 0px 0px 2px 2px lightgray;
 }
 
 #im_feeling_lucky_btn{
     height: 30px;
+    width: 120px;
     margin: 10px 0px 10px 10px;
+    background-color: #f2f2f2;
+    border: none;
 }
+
+#im_feeling_lucky_btn:hover{
+    box-shadow: 0px 0px 2px 2px lightgray;
+}
+
+.navigation_bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    display: flex;
+}
+
+a, #apps, #login_btn{
+    margin: 8px;
+    display: block;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#login_btn{
+    color: white;
+    background-color:blue;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+}
+
+#login_btn:hover{
+    background-color: mediumblue;
+}
+
+#apps:hover{
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+.footer{
+    position: fixed;
+    display: flex;
+    background-color: #f2f2f2;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    align-items: flex-end;
+}
+
+#about, #advertising, #business, #how_search_works, #privacy, #terms, #settings{
+    color: #70757a;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#privacy{
+    padding-left: 160px;
+}
+
+#about{
+    padding-left: 100px;
+}
+
